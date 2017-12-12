@@ -1,6 +1,11 @@
 Changelog
 =========
 
+0.3.9
+-----
+
+- Fixed Python 3 compatibility `PR#6 <https://github.com/fedora-infra/pyramid_fas_openid/pull/6>`
+
 0.3.8
 -----
 
