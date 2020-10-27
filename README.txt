@@ -86,14 +86,15 @@ Description:
 This is a callable that will be called upon successful verification
 by the OpenID provider. The callable will be passed three parameters;
 the current context, the current request, and a dictionary with the 
-following structure:
-{
-	'identity_url': The user's unique URL from the provider,
-	'ax':		A dictionary containing all the returned
-			active exchange parameters requested,
-	'sreg':		A list containing all the returned
-			simple registration parameters requested
-}
+following structure::
+
+    {
+        'identity_url': The user's unique URL from the provider,
+        'ax':		A dictionary containing all the returned
+                active exchange parameters requested,
+        'sreg':		A list containing all the returned
+                simple registration parameters requested
+    }
 
 This callback is required to have the following format:
 module.optional_submodules:function
