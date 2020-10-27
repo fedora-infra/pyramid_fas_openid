@@ -7,6 +7,7 @@ Changelog
 - Support for the new AAA system, which adds users who have signed agreement
   "foobar" to the ``signed_foobar`` group. Make use of this to set the
   ``cla_done`` key.
+  `PR#10 <https://github.com/fedora-infra/pyramid_fas_openid/pull/10>`
 
 
 0.3.9
