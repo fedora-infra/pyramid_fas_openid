@@ -166,6 +166,10 @@ def process_provider_response(context, request):
 
         cla_resp = cla.CLAResponse.fromSuccessResponse(info)
         success_dict['cla_done'] = cla.CLA_URI_FEDORA_DONE in cla_resp.clas
+        # In the new AAA system, signing an agreement adds the user to a
+        # specific group. The FPCA has replaced the CLA.
+        if "signed_fpca" in success_dict['groups']:
+            success_dict['cla_done'] = True
 
         callback = settings.get('openid.success_callback', None)
         if callback is not None:

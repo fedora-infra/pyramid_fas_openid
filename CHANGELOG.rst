@@ -1,6 +1,14 @@
 Changelog
 =========
 
+0.4.0
+-----
+
+- Support for the new AAA system, which adds users who have signed agreement
+  "foobar" to the ``signed_foobar`` group. Make use of this to set the
+  ``cla_done`` key.
+
+
 0.3.9
 -----
 
